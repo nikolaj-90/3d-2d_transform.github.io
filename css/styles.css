@@ -1,0 +1,268 @@
+body {
+    background-color: #433d3c;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    height: 2em;
+}
+
+.header {
+    color: rgb(32, 26, 28);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.wrapper {
+    display: block;
+    color: white;
+}
+
+.content {
+    margin: 0 20px 10px;
+    padding-top: 10px;
+}
+
+.content__block {
+    width: 50%;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+a {
+    color: white;
+    font-size: large;
+}
+
+.content__translate,
+.content__scale,
+.content__rotate,
+.content__skew,
+.content__matix,
+.content__massive2d,
+.content__origin,
+.content__perspective,
+.translate3d,
+.scale3d,
+.rotate3d,
+.matrix3d,
+.masive3d,
+.transform-style,
+.backface-visibility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    transition: all 0.8s ease 0s;
+}
+
+.block__wraper {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(24, 181, 165, 0.2);
+    perspective: 400px;
+}
+
+
+/*translate*/
+
+.content__translate {
+    transform: translate(0px, 0px);
+    background-color: #c7753d;
+}
+
+.content__translate:hover {
+    transform: translate(50px, 50px);
+}
+
+
+/*scale*/
+
+.content__scale {
+    transform: scale();
+    background-color: #77608d;
+}
+
+.content__scale:hover {
+    transform: scale(2, 1);
+}
+
+
+/*rotate*/
+
+.content__rotate {
+    transform: rotate(25deg);
+    background-color: #8a2be2;
+}
+
+.content__rotate:hover {
+    transform: rotate(-25deg);
+}
+
+
+/*skew*/
+
+.content__skew {
+    transform: skew(-10deg, -15deg);
+    background-color: #228b22;
+}
+
+.content__skew:hover {
+    transform: skew(13deg, 20deg);
+}
+
+
+/*matrix*/
+
+.content__matix {
+    transform: matrix(1, 0, -1, 1, 20, 20);
+    background-color: #20b2aa;
+}
+
+
+/*masive 2D*/
+
+.content__massive2d {
+    transform: translate();
+    background-color: #66cdaa;
+}
+
+.content__massive2d:hover {
+    transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+
+
+/*origin*/
+
+.content__origin {
+    transform-origin: top left;
+    background-color: #9370d8;
+}
+
+.content__origin:hover {
+    transform: rotate(-35deg);
+}
+
+
+/*perspective*/
+
+.block__wraper1 {
+    width: 150px;
+    height: 150px;
+    background-color: #18b5a533;
+    perspective: 400px;
+}
+
+.content__perspective {
+    background-color: #f08080;
+}
+
+.content__perspective:hover {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(45deg);
+    /*perspective: 400px;
+    perspective-origin: center;*/
+    /*perspective: 400px;
+    perspective-origin: 0 0;*/
+    height: 100%;
+    transform: rotateX(45deg);
+}
+
+
+/*3D трансформации*/
+
+.translate3d {
+    background-color: #deb887;
+}
+
+.translate3d:hover {
+    transform: translate3d(30px, 30px, 30px);
+}
+
+.scale3d {
+    background-color: #ffe4c4;
+}
+
+.scale3d:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.rotate3d {
+    background-color: #ff8c00;
+}
+
+.rotate3d:hover {
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.matrix3d {
+    background-color: #87ceeb;
+}
+
+.masive3d {
+    background-color: #ff6347;
+}
+
+.masive3d:hover {
+    transform: translate3d(30px, 30px, 30px) rotate3d(1, 1, 1, 30deg);
+}
+
+.transform-style {
+    background-color: #ff69b4;
+    transform-style: flat;
+}
+
+.transform-style:hover {
+    transform: rotateY(30deg);
+}
+
+.backface-visibility {
+    background-color: #8b0000;
+}
+
+.backface-visibility:hover {
+    transform: rotateY(150deg);
+    backface-visibility: visible;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__item {
+    color: #f5deb3;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.8s ease 0s;
+}
+
+.footer__item:hover {
+    transform: rotateY(180deg);
+    backface-visibility: visible;
+}
+
+.freelancer {
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-style: dotted;
+    border-bottom: none;
+    border-width: 10px;
+    width: 40%;
+    border-color: #f5deb3;
+}

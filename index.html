@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CSS transform</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="header">
+            Made by Nikolaj Pelykh
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <h1>CSS Transform</h1>
+            <hr>
+            <h1>2D - трансформации</h1>
+            <hr>
+            <div class="content__2D">
+                <section class="content__block">
+                    <h2>translate (x, y)</h2>
+                    <div class="content__translate">translate</div>
+                    <p><strong>Translate (x, y)</strong> - Сдвигает элемент на новое место, перемещая относительно изначального положения объекта вправо и вниз, используя координаты X и Y. Записывается следующим образом translate (x,y).</p>
+                </section>
+                <section class="content__block">
+                    <h2>scale (x, y)</h2>
+                    <div class="content__scale">
+                        scale
+                    </div>
+                    <p><strong>Scale (x, y)</strong> - Масштабирует элементы, делая их больше или меньше.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Rotate (n + deg)</h2>
+                    <div class="content__rotate">
+                        rotate
+                    </div>
+                    <p><strong>Rotate (n + deg)</strong> - Поворачивает элементы.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Skew (x + deg, y + deg)</h2>
+                    <div class="content__skew">
+                        skew
+                    </div>
+                    <p><strong>Skew (x + deg, y + deg)</strong> - Деформирует (наклоняет) элементы.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Matrix (a, c, b, d, x, y)</h2>
+                    <div class="content__matix">
+                        matrix
+                    </div>
+                    <p><strong>Matrix (a, c, b, d, x, y)</strong> - Позволяет объединить несколько функций 2D-трансформаций в одной. <br> Значение a изменяет масштаб по горизонтали. Значение от 0 до 1 уменьшает элемент, больше 1 — увеличивает. Значение c
+                        деформирует (сдвигает) стороны элемента по оси Y, положительное значение — вверх, отрицательное — вниз. Значение b деформирует (сдвигает) стороны элемента по оси X, положительное значение — влево, отрицательное — вправо. Значение
+                        d изменяет масштаб по вертикали. Значение меньше 1 уменьшает элемент, больше 1 — увеличивает. Значение x смещает элемент по оси X, положительное — вправо, отрицательное — влево. Значение y смещает элемент по оси Y, положительное
+                        значение — вниз, отрицательное — вверх.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Множественные 2D трансформации</h2>
+                    <div class="content__massive2d">
+                        massive2d
+                    </div>
+                    <p><strong>Множественные 2D трансформации</strong> - Позволяет объединить несколько функций 2D-трансформаций в одной.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Transform-origin</h2>
+                    <div class="content__origin">
+                        transform-origin
+                    </div>
+                    <p><strong>Transform-origin</strong> - Позволяет сместить центр трансформации, относительно которого происходит изменение положения/размера/формы элемента.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Perspective, perspective-origin</h2>
+                    <div class="block__wraper1">
+                        <div class="content__perspective">
+                            perspective
+                        </div>
+                    </div>
+                    <p><strong>Perspective, perspective-origin</strong> - Установка глубины и смена точки начала координат.</p>
+                </section>
+                <!--3D трансформации-->
+                <hr>
+                <h1>3D - трансформации</h1>
+                <hr>
+                <section class="content__block">
+                    <h2>Translate3d (x, y, z)</h2>
+                    <div class="block__wraper">
+                        <div class="translate3d">Translate3d</div>
+                    </div>
+                    <p><strong>Translate3d (x, y, z)</strong> - По аналогии со своим 2D братом, это значение задает перемещение элемента, но в 3D-пространстве. Помимо оси X и Y добавляется ось Z.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Scale3d (x, y, z)</h2>
+                    <div class="block__wraper">
+                        <div class="scale3d">Scale3d</div>
+                    </div>
+                    <p><strong>Scale3d (x, y, z)</strong> - Задает трехмерное масштабирование по одной из осей X Y Z. Фактически повторяет функционал своего 2d аналога.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Rotate3d (x, y, z, deg)</h2>
+                    <div class="block__wraper">
+                        <div class="rotate3d">Rotate3d</div>
+                    </div>
+                    <p><strong>Rotate3d (x, y, z, deg)</strong> - Вращает элемент относительно трех осей. Элемент поворачивается под углом, задаваемым последним параметром относительно вектора направления x,y,z.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</h2>
+                    <div class="block__wraper">
+                        <div class="matrix3d"><a href="http://ds-overdesign.com/transform/matrix3d.html">Matrix3d</a></div>
+                    </div>
+                    <p><strong>Matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</strong> - Задает трехмерное преобразование как однородную матрицу размером 4×4 с шестнадцатью значениями в столбцах.
+                        <br><a href="http://ds-overdesign.com/transform/matrix3d.html" target="blank">Генератор матриц</a></p>
+                </section>
+                <section class="content__block">
+                    <h2>Множественные 3D трансформации</h2>
+                    <div class="block__wraper">
+                        <div class="masive3d">Masive 3D</div>
+                    </div>
+                    <p><strong>Множественные 3D трансформации</strong> - Позволяет объединить несколько функций 3D-трансформаций в одной.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Transform-style</h2>
+                    <div class="block__wraper">
+                        <div class="transform-style">Transform-style</div>
+                    </div>
+                    <p><strong>Transform-style</strong> - Определяет, как дочерние элементы должны отображаться в 3D-пространстве.</p>
+                </section>
+                <section class="content__block">
+                    <h2>Backface-visibility</h2>
+                    <div class="block__wraper">
+                        <div class="backface-visibility">Backface-visibility</div>
+                    </div>
+                    <p><strong>Backface-visibility</strong> - Отображение обратной стороны объекта.
+                        <br>backface-visibility: visible; - по умолчанию</p>
+                </section>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__item">Это футер</div>
+            <div class="freelancer">
+                <a href="https://fls.guru/transform.html" target="blank">Сен-Сей "Фрилансер по жизни"</a>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
